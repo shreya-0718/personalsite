@@ -5,3 +5,4 @@ I set up my React app today! I also bought a domain name with the Athena Award (
 
 
 I made the first box- the "Hello, I'm Shreya!" one. Now I'm at my first challenge, trying to put the sparkles on top (around??) the box. 
+Edit: It works! I added the sparkles to the *greetings* box, and edited their positions until it matched what I have in my Figma file.
