@@ -28,8 +28,7 @@
 .comets {
     position: absolute;
     top: 6vh;
-    
-    margin-top: 10vh;
+    margin-top: 0vh;
     margin-left: -1vh;
     height: 43vh;
     width: 60vh;

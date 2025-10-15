@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import Greetings from './testing/greetings';
 import ProjLink from './testing/projlink';
+import Socials from './testing/socials';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -14,6 +15,7 @@ root.render(
       <Greetings />
       <ProjLink/>
     </div>
+    <Socials/>
   </React.StrictMode>
 );
 
