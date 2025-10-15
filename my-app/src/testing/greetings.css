@@ -37,3 +37,9 @@
   top: 20vh;
   left: 83vh;
 }
+
+@media (max-width: 600px) {
+  .sparkle {
+    visibility: hidden;
+  }
+}
