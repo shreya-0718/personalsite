@@ -13,3 +13,4 @@ Updates (it's easier to list):
 - struggled on making the hover box smaller
 - it is INCREDIBLY annoying to add comments... 0/10 would not recommend
 - working on the box with my links!!
+- finished working on the box with all the links :nod:

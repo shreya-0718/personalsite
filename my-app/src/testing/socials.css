@@ -34,6 +34,26 @@
     filter: drop-shadow(0px 0px 1px #D277FF);
 }
 
+.insta:hover {
+    height: 15vh;
+    filter: drop-shadow(0px 0px 3px #D277FF);
+}
+
+.gith:hover {
+    height: 15vh;
+    filter: drop-shadow(0px 0px 3px #D277FF);
+}
+
+.lin:hover {
+    height: 15vh;
+    filter: drop-shadow(0px 0px 3px #D277FF);
+}
+
+.slack:hover {
+    height: 15vh;
+    filter: drop-shadow(0px 0px 3px #D277FF);
+}
+
 a {
     text-decoration: none;
 }
