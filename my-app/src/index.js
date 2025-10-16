@@ -2,20 +2,24 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import Greetings from './testing/greetings';
-import ProjLink from './testing/projlink';
-import Socials from './testing/socials';
+import Greetings from './home/greetings';
+import ProjLink from './home/projlink';
+import Socials from './home/socials';
+
+import Home from './home/Home';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
-    <div className="mainrow">
+    {/* <div className="mainrow">
       <Greetings />
       <ProjLink/>
     </div>
-    <Socials/>
+    <Socials/> */}
+
+    <App/>
   </React.StrictMode>
 );
 

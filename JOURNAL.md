@@ -1,8 +1,7 @@
 This is my first time using React, so I wanted to document my journey here! 
 
-### Oct. 14-15
+### Day 1-2
 I set up my React app today! I also bought a domain name with the Athena Award (https://award.athena.hackclub.com/). 
-
 
 I made the first box- the "Hello, I'm Shreya!" one. Now I'm at my first challenge, trying to put the sparkles on top (around??) the box. 
 Edit: It works! I added the sparkles to the *greetings* box, and edited their positions until it matched what I have in my Figma file.
@@ -14,3 +13,10 @@ Updates (it's easier to list):
 - it is INCREDIBLY annoying to add comments... 0/10 would not recommend
 - working on the box with my links!!
 - finished working on the box with all the links :nod:
+
+Okay, so today/yesterday was the "easy part"- figuring out how to work React. It wasn't as bad as I thought, actually (knocking on wood cuz I might have just jinxed myself). Tomorrow, I'll get started on making the blog stuff... but until then, see you!
+
+### Day 3
+
+I'm finally adding other pages! My design doesn't have a navigation bar. Watching this (https://www.youtube.com/watch?v=qi32YwjoN2U) tutorial to figure it out. Update: Figured it out! Now I have more of a plan / idea for what I'm going to do for the rest :) esp. the links section.
+

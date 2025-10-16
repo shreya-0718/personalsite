@@ -14,14 +14,14 @@ code {
 }
 
 
-.mainrow {
+.row {
   display: flex;
   gap: 24vh; 
   align-items: flex-start;
 }
 
 @media (max-width: 600px) {
-  .mainrow {
+  .row {
     flex-direction: column;
     align-items: center;
   }
