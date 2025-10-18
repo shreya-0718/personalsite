@@ -1,16 +1,24 @@
 import './otherlinks.css'
+import {Link} from 'react-router-dom';
+
 
 function OtherLinks() {
     return (
         <div className="otherlinks-box">
             <div className="otherlinks-header">
-                other random things
+                more random things
             </div>
 
-            <div classname="actual-links">
-                <a href="">
-                    
-                </a>
+            <div className="actual-links">
+
+                <>
+                    <Link to='/aboutme'> about me </Link>
+                </>
+                
+                <>
+                    <Link to='/projects'> project gallery </Link>
+                </>
+                
 
             </div>
         </div>

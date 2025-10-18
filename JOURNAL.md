@@ -20,3 +20,4 @@ Okay, so today/yesterday was the "easy part"- figuring out how to work React. It
 
 I'm finally adding other pages! My design doesn't have a navigation bar. Watching this (https://www.youtube.com/watch?v=qi32YwjoN2U) tutorial to figure it out. Update: Figured it out! Now I have more of a plan / idea for what I'm going to do for the rest :) esp. the links section.
 
+

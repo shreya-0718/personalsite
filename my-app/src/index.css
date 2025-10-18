@@ -14,9 +14,15 @@ code {
 }
 
 
-.row {
+.row1 {
   display: flex;
   gap: 24vh; 
+  align-items: flex-start;
+}
+
+.row2 {
+  display: flex;
+  gap: 21vh; 
   align-items: flex-start;
 }
 

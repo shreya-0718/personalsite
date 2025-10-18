@@ -18,8 +18,8 @@ root.render(
       <ProjLink/>
     </div>
     <Socials/> */}
-
     <App/>
+    
   </React.StrictMode>
 );
 
