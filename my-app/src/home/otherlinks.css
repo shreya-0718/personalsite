@@ -16,7 +16,6 @@
   display: flex;
   flex-direction: column;
   padding-bottom: -15vh;
-  background-color: pink;
   font-size: calc(10px + 3.14159vmin);
   color: white;
   position: relative;
