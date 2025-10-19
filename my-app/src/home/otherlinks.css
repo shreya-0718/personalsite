@@ -8,17 +8,20 @@
 .otherlinks-header {
   font-family: "Lexend Zetta", sans-serif;
   font-weight: 600;
-  min-height: 30vh;
+  min-height: 18vh;
   margin-left: -4vh;
   margin-top: 26vh;
   padding-left: 0vh;
   width: 50vh;
   display: flex;
   flex-direction: column;
+  padding-bottom: -15vh;
+  background-color: pink;
   font-size: calc(10px + 3.14159vmin);
   color: white;
   position: relative;
   text-align: center;
+  z-index: 1;
   text-decoration: underline;
 }
 
@@ -26,7 +29,7 @@
     text-align: right;
     font-family: "Lexend Zetta", sans-serif;
     font-size: calc(10px + 1.5vmin);
-    margin-top: -10vh;
+    margin-top: 0vh;
     display: flex;
     flex-direction: column;
     gap: 5vh;
@@ -35,6 +38,7 @@
 
 .actual-links a {
     color: white;
+    z-index: 3;
 
 }
 
