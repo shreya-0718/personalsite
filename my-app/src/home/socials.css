@@ -65,6 +65,7 @@ a {
     margin-top:-18vh;
     margin-left: 8vh;
     visibility: hidden;
+    text-align: center;
 }
 
 .slackbox:hover p {
