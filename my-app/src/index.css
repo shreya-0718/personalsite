@@ -33,3 +33,10 @@ code {
   }
 }
 
+
+.homebutton {
+  visibility: visible !important;
+  display: inline-block !important;
+  margin-top: 1vh;
+  margin-left: 111vh;
+}
