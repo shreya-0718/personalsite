@@ -8,7 +8,7 @@ function HomeButton() {
 
             <div className="homebutton-wrapper">
                 <Link to='/'> 
-                    <img className="homebutton" src={homebuttonimage} alt="home button" width="100" />
+                    <img className="homebutton" src={homebuttonimage} alt="home button" width="100"/>
                 </Link>
             </div>
 
