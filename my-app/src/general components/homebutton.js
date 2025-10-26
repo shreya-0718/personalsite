@@ -15,6 +15,6 @@ function HomeButton() {
         </>
 
     );
-} 
+}
 
 export default HomeButton

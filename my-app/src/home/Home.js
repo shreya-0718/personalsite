@@ -2,6 +2,7 @@ import Greetings from './greetings';
 import ProjLink from './projlink';
 import Socials from './socials';
 import OtherLinks from './otherlinks';
+import Copyright from '../general components/copyright.js'
 
 function Home() {
     return (
@@ -15,6 +16,7 @@ function Home() {
                 <Socials/>
                 <OtherLinks/>
             </div>
+            <Copyright/>
             
         </>
     );

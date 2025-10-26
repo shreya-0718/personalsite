@@ -1,0 +1,26 @@
+.copyright-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;
+  gap: 0vh;
+  flex-wrap: wrap;
+}
+
+.copyright-text {
+  background-color: #030026;
+  font-family: "Lexend Zetta", sans-serif;
+  font-weight: 600;
+  margin-right: -1vh;
+  font-size: calc(10px + 0.4vmin);
+  color: white;
+  text-shadow: 0px 0px 25px #D277FF;
+  white-space: normal; 
+  max-width: 14vw; 
+}
+
+.github {
+  width: 20vh;
+  height: auto;
+  display: inline-block;
+}
