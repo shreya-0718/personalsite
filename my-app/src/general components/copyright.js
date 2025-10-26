@@ -6,9 +6,9 @@ function Copyright() {
         <>
             <div className="copyright-wrapper">
                 <div className="copyright-text">
-                    Copyright © 2025 | All rights reserved.
+                   This website is open source!
                 </div>
-                <a href="https://github.com/shreya-0718/"> 
+                <a href="https://github.com/shreya-0718/personalsite"> 
                     <img className="github" src={githubimage} alt="github" />
                 </a>
             </div>
