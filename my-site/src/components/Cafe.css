@@ -1,0 +1,42 @@
+.cafe-wrapper {
+  display: flex;
+  justify-content: center;  
+  align-items: center;     
+  height: 100vh;      
+  width: 100vw;       
+  overflow: hidden; 
+}
+
+.cafe {
+  max-width: 70vw;   
+  max-height: 70vh;  
+}
+
+.ye-shall-float {
+  
+  width: auto;   
+  height: auto;  
+  display: block;
+  margin: 0 auto;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(10px); }
+  100% { transform: translateY(0px); }  
+}
+
+button {
+  position: absolute;
+  background: transparent;
+  border: none;
+  cursor: none;
+}
+
+.sign {
+  top: 65%;
+  left: 45%;
+  width: 10%;
+  height: 20%;
+}

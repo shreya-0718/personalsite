@@ -1,0 +1,17 @@
+.cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  background: rgba(99, 58, 37, 1);
+  border: 4px solid rgba(46, 28, 12, 1);
+  border-radius: 75%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+body.cursor-glow .cursor {
+  box-shadow: 0 0 10px 6px rgba(241, 134, 165, 2);
+  background: rgba(99, 58, 37, 1);
+
+}
