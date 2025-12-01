@@ -9,6 +9,9 @@ function Cafe() {
                 <img src="cat_cafe.jpg" className="cafe" alt="" />
 
                 <button className="sign"></button>
+                <button className="menu"></button>
+                <button className="cashier"></button>
+
             </div>
             
         
