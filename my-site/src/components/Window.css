@@ -1,0 +1,47 @@
+.window {
+  position: absolute;
+  width: 350px;
+  background: rgba(255, 255, 255, 0.85);
+  border: 2px solid #d9b6b6;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  user-select: none;
+}
+
+.window-bar {
+  background: #f8cdd0;
+  padding: 8px;
+  cursor: grab;
+  display: flex;
+  align-items: center;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.window-title {
+    font-size: 25px;
+}
+
+.window-content {
+  padding: 12px;
+}
+
+.close-btn {
+  position: absolute;
+  top: -10px;   
+  right: -15px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.close-btn img {
+  width: 35px;
+  height: 35px;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.close-btn:hover img {
+  transform: rotate(15deg) scale(1.1);
+  filter: drop-shadow(0 0 6px rgba(255, 105, 180, 0.8));
+}

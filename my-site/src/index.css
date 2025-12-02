@@ -1,12 +1,17 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-
   background-color: #EBDBF6;
   cursor: none;
+  font-family: "DynaPuff", system-ui;
 
+}
+
+p {
+  font-family: "Sour Gummy", sans-serif;
+}
+
+button {
+  cursor: none;
 }
 
 code {
