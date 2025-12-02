@@ -1,18 +1,20 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Cafe from "./components/Cafe";
 import Cursor from "./components/Cursor";
 
 function App() {
+  const [hovering, setHovering] = useState(false);
+
   useEffect(() => {
     const handleEnter = (e) => {
       if (e.target.tagName === "BUTTON") {
-        document.body.classList.add("cursor-glow");
+        setHovering(true);
       }
     };
 
     const handleLeave = (e) => {
       if (e.target.tagName === "BUTTON") {
-        document.body.classList.remove("cursor-glow");
+        setHovering(false);
       }
     };
 
@@ -27,8 +29,8 @@ function App() {
 
   return (
     <div className="App">
-      <Cursor/>
-      <Cafe/>
+      <Cursor hovering={hovering} />
+      <Cafe />
     </div>
   );
 }
