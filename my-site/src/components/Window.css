@@ -6,12 +6,13 @@
   border-radius: 12px;
   box-shadow: 0 6px 20px rgba(0,0,0,0.2);
   user-select: none;
+  color: rgba(37, 11, 3, 1)
+
 }
 
 .window-bar {
   background: #f8cdd0;
   padding: 8px;
-  cursor: grab;
   display: flex;
   align-items: center;
   border-top-left-radius: 12px;
@@ -20,6 +21,7 @@
 
 .window-title {
     font-size: 25px;
+    font-weight: bold;
 }
 
 .window-content {
@@ -32,7 +34,6 @@
   right: -15px;
   background: transparent;
   border: none;
-  cursor: pointer;
 }
 
 .close-btn img {
@@ -43,5 +44,12 @@
 
 .close-btn:hover img {
   transform: rotate(15deg) scale(1.1);
-  filter: drop-shadow(0 0 6px rgba(255, 105, 180, 0.8));
+  filter: drop-shadow(0 0 10px rgba(228, 58, 106, 0.8));
+
+}
+
+.h2 {
+    font-weight: none;
+    text-decoration: underline;
+    text-decoration-style: wavy;
 }

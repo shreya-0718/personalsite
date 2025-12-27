@@ -1,31 +1,40 @@
 import React from 'react'
 import './Cafe.css'
-import Window from './Window'
 import { useState } from 'react';
 
-function Cafe() {
-  const [open, setOpen] = useState(null);
+// tabs:
+import Welcome from '../tabs/Welcome';
+import About from '../tabs/About';
 
+function Cafe() {
+  const [openWindows, setOpenWindows] = useState([]);
   return (
     <>
         <div className='cafe-wrapper'>
             <div className='ye-shall-float'>
                 <img src="cat_cafe.jpg" className="cafe" alt="" />
 
-                <button className="sign" onClick={() => setOpen("about")}></button>
+                <button className="sign" onClick={() => setOpenWindows([...openWindows, "welcome"])}></button>
+                <button className="cashier" onClick={() => setOpenWindows([...openWindows, "about"])}></button>
                 <button className="menu"></button>
-                <button className="cashier"></button>
 
             </div>
-            
-
-            
-
         </div>
-        {open === "about" && (
-          <Window title="About Me" onClose={() => setOpen(null)}>
-            <p>Hello!!</p>
-          </Window>
+
+        {openWindows.includes("welcome") && (
+          <Welcome
+            onClose={() =>
+              setOpenWindows(openWindows.filter((w) => w !== "welcome"))
+            }
+          />
+        )}
+
+        {openWindows.includes("about") && (
+          <About
+            onClose={() =>
+              setOpenWindows(openWindows.filter((w) => w !== "about"))
+            }
+          />
         )}
 
 
