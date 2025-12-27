@@ -2,12 +2,20 @@ body {
   margin: 0;
   background-color: #EBDBF6;
   cursor: none;
-  font-family: "DynaPuff", system-ui;
+    font-family: "DynaPuff", system-ui;
 
 }
 
 p {
   font-family: "Sour Gummy", sans-serif;
+  font-size: 18px;
+}
+
+h2 {
+    font-weight: 100;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    font-size: 24px;
 }
 
 button {
