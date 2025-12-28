@@ -2,36 +2,65 @@ import React, { useState, useRef } from "react";
 import "./Window.css";
 
 function Window({ title, children, onClose }) {
-  const [pos, setPos] = useState({ x: 120, y: 120 });
+  const [pos, setPos] = useState({
+    x: window.innerWidth / 2,
+    y: window.innerHeight / 2,
+  });
   const [dragging, setDragging] = useState(false);
   const offset = useRef({ x: 0, y: 0 });
 
-  const handleMouseDown = (e) => {
+  const handleDown = (clientX, clientY) => {
     setDragging(true);
     offset.current = {
-      x: e.clientX - pos.x,
-      y: e.clientY - pos.y,
+      x: clientX - pos.x,
+      y: clientY - pos.y,
     };
   };
 
-  const handleMouseMove = (e) => {
+  const handleMove = (clientX, clientY) => {
     if (!dragging) return;
     setPos({
-      x: e.clientX - offset.current.x,
-      y: e.clientY - offset.current.y,
+      x: clientX - offset.current.x,
+      y: clientY - offset.current.y,
     });
   };
 
-  const handleMouseUp = () => setDragging(false);
+  const handleUp = () => setDragging(false);
+
+  const handleMouseDown = (e) => handleDown(e.clientX, e.clientY);
+  const handleMouseMove = (e) => handleMove(e.clientX, e.clientY);
+  const handleMouseUp = () => handleUp();
+
+  const handleTouchStart = (e) => {
+    const touch = e.touches[0];
+    handleDown(touch.clientX, touch.clientY);
+  };
+
+  const handleTouchMove = (e) => {
+    const touch = e.touches[0];
+    handleMove(touch.clientX, touch.clientY);
+  };
+
+  const handleTouchEnd = () => handleUp();
 
   return (
     <div
       className="window"
-      style={{ left: pos.x, top: pos.y }}
+      style={{
+        left: pos.x,
+        top: pos.y,
+        transform: "translate(-50%, -50%)",
+      }}
       onMouseMove={handleMouseMove}
       onMouseUp={handleMouseUp}
+      onTouchMove={handleTouchMove}
+      onTouchEnd={handleTouchEnd}
     >
-      <div className="window-bar" onMouseDown={handleMouseDown}>
+      <div
+        className="window-bar"
+        onMouseDown={handleMouseDown}
+        onTouchStart={handleTouchStart}
+      >
         <span className="window-title">{title}</span>
       </div>
       <button className="close-btn" onClick={onClose}>
