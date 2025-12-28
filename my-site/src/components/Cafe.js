@@ -1,6 +1,6 @@
 import React from 'react'
 import './Cafe.css'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 // tabs:
 import Welcome from '../tabs/Welcome';
@@ -8,6 +8,11 @@ import About from '../tabs/About';
 
 function Cafe() {
   const [openWindows, setOpenWindows] = useState([]);
+
+  useEffect(() => {
+    setOpenWindows((prev) => (prev.includes("welcome") ? prev : [...prev, "welcome"]));
+  }, []);
+  
   return (
     <>
         <div className='cafe-wrapper'>
