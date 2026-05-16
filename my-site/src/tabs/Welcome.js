@@ -9,7 +9,7 @@ function Welcome({ onClose }) {
         you might find something you like :)
         <br/> <br />
         To navigate, click elements and see what windows show up! For example, this
-        window opens by clicking the sign on the bottom of the cafe.
+        window opens by clicking the sign on the bottom of the cafe. 
         <br /><br />
         Don't forget your boba!
       </p>

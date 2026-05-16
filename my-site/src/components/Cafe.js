@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react';
 // tabs:
 import Welcome from '../tabs/Welcome';
 import About from '../tabs/About';
+import Contacts from '../tabs/Contacts';
 
 function Cafe() {
   const [openWindows, setOpenWindows] = useState([]);
@@ -22,6 +23,7 @@ function Cafe() {
                 <button className="sign" onClick={() => setOpenWindows([...openWindows, "welcome"])}></button>
                 <button className="cashier" onClick={() => setOpenWindows([...openWindows, "about"])}></button>
                 <button className="menu"></button>
+                <button className="contacts" onClick={() => setOpenWindows([...openWindows, "contacts"])}></button>
 
             </div>
         </div>
@@ -38,6 +40,14 @@ function Cafe() {
           <About
             onClose={() =>
               setOpenWindows(openWindows.filter((w) => w !== "about"))
+            }
+          />
+        )}
+
+        {openWindows.includes("contacts") && (
+          <Contacts
+            onClose={() =>
+              setOpenWindows(openWindows.filter((w) => w !== "contacts"))
             }
           />
         )}
