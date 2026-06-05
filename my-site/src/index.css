@@ -30,3 +30,16 @@ code {
 a {
   color: #d04d79;
 }
+
+.menu-link {
+  background: none;
+  border: none;
+  color: #d04d79;
+  font-size: 18px;
+  font-family: "Sour Gummy", sans-serif;
+  cursor: none;
+  text-align: left;
+  padding: 0;
+  text-decoration: underline;
+}
+

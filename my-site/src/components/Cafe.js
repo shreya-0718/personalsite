@@ -6,6 +6,7 @@ import { useState, useEffect } from 'react';
 import Welcome from '../tabs/Welcome';
 import About from '../tabs/About';
 import Contacts from '../tabs/Contacts';
+import Menu from '../tabs/Menu';
 
 function Cafe() {
   const [openWindows, setOpenWindows] = useState([]);
@@ -22,7 +23,7 @@ function Cafe() {
 
                 <button className="sign" onClick={() => setOpenWindows([...openWindows, "welcome"])}></button>
                 <button className="cashier" onClick={() => setOpenWindows([...openWindows, "about"])}></button>
-                <button className="menu"></button>
+                <button className="menu" onClick={() => setOpenWindows([...openWindows, "menu"])}></button>
                 <button className="contacts" onClick={() => setOpenWindows([...openWindows, "contacts"])}></button>
 
             </div>
@@ -49,6 +50,17 @@ function Cafe() {
             onClose={() =>
               setOpenWindows(openWindows.filter((w) => w !== "contacts"))
             }
+          />
+        )}
+
+        {openWindows.includes("menu") && (
+          <Menu
+            onClose={() =>
+              setOpenWindows(openWindows.filter((w) => w !== "menu"))
+            }
+            onNavigate={(tabName) => {
+              setOpenWindows([...openWindows, tabName]);
+            }}
           />
         )}
 
