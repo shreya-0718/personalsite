@@ -2,7 +2,7 @@ body {
   margin: 0;
   background-color: #EBDBF6;
   cursor: none;
-    font-family: "DynaPuff", system-ui;
+  font-family: "DynaPuff", system-ui;
 
 }
 
@@ -29,9 +29,14 @@ code {
 
 a {
   color: #d04d79;
+  cursor: none;
 }
 
-.menu-link {
+a:hover {
+  color: #953454;
+}
+
+.menu-link  {
   background: none;
   border: none;
   color: #d04d79;
@@ -43,3 +48,6 @@ a {
   text-decoration: underline;
 }
 
+.menu-link:hover {
+  color: #953454;
+}

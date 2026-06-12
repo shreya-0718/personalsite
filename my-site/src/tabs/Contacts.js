@@ -9,7 +9,7 @@ function Contacts({ onClose }) {
       </p>
 
       <p>
-        Instagram: <a href="https://www.instagram.com/its.shreyaluu/" target="_blank" rel="noopener noreferrer">@its.shreyaluu</a> <br/>
+        Instagram: <a href="https://www.instagram.com/shreyaluu.mov/" target="_blank" rel="noopener noreferrer">@shreyaluu.mov</a> <br/>
         GitHub: <a href="https://github.com/shreya-0718/" target="_blank" rel="noopener noreferrer">shreya-0718</a> <br/>
         LinkedIn: <a href="https://www.linkedin.com/in/shreya-chougule-8b2458381/" target="_blank" rel="noopener noreferrer">Shreya Chougule</a> <br/>
         Email: <a href="mailto:shreyachougule796@gmail.com" target="_blank" rel="noopener noreferrer">shreyachougule796@gmail.com</a>
