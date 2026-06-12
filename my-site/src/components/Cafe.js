@@ -1,6 +1,5 @@
-import React from 'react'
+import React, { useState, useEffect, useContext } from 'react';
 import './Cafe.css'
-import { useState, useEffect } from 'react';
 
 // tabs:
 import Welcome from '../tabs/Welcome';
@@ -8,8 +7,11 @@ import About from '../tabs/About';
 import Contacts from '../tabs/Contacts';
 import Menu from '../tabs/Menu';
 
+import { CursorContext } from './CursorContext';
+
 function Cafe() {
   const [openWindows, setOpenWindows] = useState([]);
+  const { setCursorType } = useContext(CursorContext);
 
   useEffect(() => {
     setOpenWindows((prev) => (prev.includes("welcome") ? prev : [...prev, "welcome"]));
@@ -25,7 +27,10 @@ function Cafe() {
                 <button className="cashier" onClick={() => setOpenWindows([...openWindows, "about"])}></button>
                 <button className="menu" onClick={() => setOpenWindows([...openWindows, "menu"])}></button>
                 <button className="contacts" onClick={() => setOpenWindows([...openWindows, "contacts"])}></button>
-
+                <button
+                  className="boba"
+                  onClick={() => setCursorType("boba")}
+                ></button>
             </div>
         </div>
 

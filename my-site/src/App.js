@@ -1,37 +1,15 @@
-import { useEffect, useState } from "react";
 import Cafe from "./components/Cafe";
 import Cursor from "./components/Cursor";
+import { CursorProvider } from "./components/CursorContext";
 
 function App() {
-  const [hovering, setHovering] = useState(false);
-
-  useEffect(() => {
-    const handleEnter = (e) => {
-      if (e.target.tagName === "BUTTON") {
-        setHovering(true);
-      }
-    };
-
-    const handleLeave = (e) => {
-      if (e.target.tagName === "BUTTON") {
-        setHovering(false);
-      }
-    };
-
-    document.addEventListener("mouseover", handleEnter);
-    document.addEventListener("mouseout", handleLeave);
-
-    return () => {
-      document.removeEventListener("mouseover", handleEnter);
-      document.removeEventListener("mouseout", handleLeave);
-    };
-  }, []);
-
   return (
-    <div className="App">
-      <Cursor hovering={hovering} />
-      <Cafe />
-    </div>
+    <CursorProvider>
+      <div className="App">
+        <Cursor />
+        <Cafe />
+      </div>
+    </CursorProvider>
   );
 }
 
