@@ -18,6 +18,10 @@ gsap.registerPlugin(ScrollTrigger)
 
 export function Computer(props) {
   const { nodes, materials } = useGLTF('/models/computer.glb')
+  const screenMaterial = materials["Material.001"].clone() // HOLY THIS WORKS??? 
+  // basically right all i did was clone the screen material (cuz otherwise the wires and stuff were also turning blue)
+  // and changed the import code way below and IT WORKS OH MY
+
   const groupRef = useRef(null)
   const { camera } = useThree()
 
@@ -71,6 +75,29 @@ export function Computer(props) {
         duration: 1,
         ease: "none",
       }, 0)
+      .to(screenMaterial, {
+        emissive: new THREE.Color("#5197ff"),
+        emissiveIntensity: .4,
+        duration: .02,
+        ease: "none",
+      }, 0.3)
+      .to("#root", {
+        backgroundColor: "#5197ff",
+        duration: 0.1,
+        ease: "power2.out",
+      }, .8)
+      .to("#next-section", {
+        opacity: 1,
+        duration: .5,
+        ease: "power2.out",
+      }, "<")
+      .to("canvas", {
+        opacity: 0,
+        duration: .5,
+        ease: "power2.out",
+      }, "<")
+
+
 
     return () => {
       ScrollTrigger.getAll().forEach((instance) => instance.kill())
@@ -366,7 +393,7 @@ export function Computer(props) {
         <mesh geometry={nodes.Cube148_Material015_0.geometry} material={materials['Material.015']} position={[165.824, 50.245, 358.847]} rotation={[-Math.PI / 2, 0, 0]} scale={100} />
         <mesh geometry={nodes.Cylinder001_Material003_0.geometry} material={materials['Material.003']} rotation={[-Math.PI / 2, 0, 0]} scale={100} />
         <mesh geometry={nodes.Cylinder010_Material_0.geometry} material={materials.Material} position={[162.316, 193.024, 226.657]} rotation={[-Math.PI / 2, 0, 0]} scale={100} />
-        <mesh geometry={nodes.Cube124_Material001_0.geometry} material={materials['Material.001']} position={[0, 264.313, 0]} rotation={[-Math.PI / 2, 0, 0]} scale={100} />
+        <mesh geometry={nodes.Cube124_Material001_0.geometry} material={screenMaterial} position={[0, 264.313, 0]} rotation={[-Math.PI / 2, 0, 0]} scale={100} />
         <mesh geometry={nodes.Circle004_Material002_0.geometry} material={materials['Material.002']} rotation={[-Math.PI / 2, 0, 0]} scale={100} />
         <mesh geometry={nodes.Circle005_Material007_0.geometry} material={materials['Material.007']} rotation={[-Math.PI / 2, 0, 0]} scale={100} />
         <mesh geometry={nodes.Cube144_Material015_0.geometry} material={materials['Material.015']} position={[165.824, 0, 358.847]} rotation={[-Math.PI / 2, 0, 0]} scale={100} />

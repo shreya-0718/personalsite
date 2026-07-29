@@ -24,7 +24,9 @@ canvas {
   display: block;
 }
 
-#scroll-buffer {
-  position: relative;
-  height: -100vh;
+#next-section {
+  background-color: #5197ff;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1s ease;
 }
