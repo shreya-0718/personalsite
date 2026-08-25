@@ -83,9 +83,9 @@ export function Computer(props) {
       }, 0.3)
       .to("#root", {
         backgroundColor: "#5197ff",
-        duration: 0.1,
+        duration: 0.01,
         ease: "power2.out",
-      }, .8)
+      }, 1)
       .to("#next-section", {
         opacity: 1,
         duration: .5,
